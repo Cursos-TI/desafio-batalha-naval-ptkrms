@@ -27,6 +27,17 @@ int main() {
         tabuleiro[2][i] = 3; 
     }
 
+    //posicionando um navio diagonalmente da posição (7,4) até (5,5).
+    for (int i = 4, j = 7; i <= 7 && j > 4; i++, j--) {
+        tabuleiro[i][j] = 3; 
+    }
+
+    
+    //posicionando um navio diagonalmente da posição (0,0) até (2,2).
+    for (int i = 0, j = 0; i <= 2 && j <= 2; i++, j++) {
+    tabuleiro[i][j] = 3;
+}
+
     // Exibe o tabuleiro inicial.
     printf("Tabuleiro inicial:\n");
     for (int i = 0; i < 10; i++) {
